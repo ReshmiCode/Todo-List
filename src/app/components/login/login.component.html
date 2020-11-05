@@ -1,0 +1,37 @@
+<div class="login-container">
+  <form>
+    <div class="input-cell">
+      <label class="fg-text-left" for="test-email">Username or Email</label>
+      <input
+        [(ngModel)]="email"
+        pInputText
+        id="test-email"
+        name="email"
+        required
+        type="text"
+        autocomplete="off"
+      />
+    </div>
+    <div class="input-cell">
+      <label class="fg-text-left" for="test-password">Password</label>
+      <input
+        [(ngModel)]="password"
+        id="test-password"
+        name="password"
+        required
+        type="password"
+        autocomplete="off"
+      />
+    </div>
+    <div class="ui-g-12">
+      <button
+        class="fg-button login-button"
+        (click)="login()"
+        pButton
+        data-testid="submit-button"
+        type="submit"
+        label="LOG IN"
+      ></button>
+    </div>
+  </form>
+</div>
